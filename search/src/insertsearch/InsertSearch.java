@@ -8,6 +8,9 @@ package insertsearch;
  * 插值查找和二分查找的区别是mid的取值不同
  *      二分法  mid = （left + right）/ 2   或者 mid = left + 0.5 * (right - left)
  *      插值查找 mid = left + (right - left) * (findVal - left) / (arr[right] - arr[left])
+ *
+ *  对于数据量大，数据分布比较均匀的情况，用插值查找会比较好
+ *  * 在数据分布不均匀的情况下，插值查找不一定比二分快
  */
 public class InsertSearch {
     public static void main(String[] args) {
